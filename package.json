@@ -4,7 +4,8 @@
   "description": "personal Website",
   "main": "server.js",
   "scripts": {
-    "test": "node backend/server.js"
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js"
   },
   "repository": {
     "type": "git",
