@@ -5,7 +5,7 @@ const dotenv = require("dotenv").config();
 const PORT = process.env.PORT;
 const path = require("path");
 const { errorHandler } = require('./middleware/errorMiddleware')
-const { connectDB } = require("./config/db")
+const connectDB = require("./config/db")
 
 const { urlencoded } = require("express");
 

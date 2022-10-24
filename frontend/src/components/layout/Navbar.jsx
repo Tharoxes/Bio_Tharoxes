@@ -48,7 +48,7 @@ function Navbar() {
               </li>
               <li className="dropdown mx-2">
                 <a
-                  href="#"
+                  href="/twitch"
                 >
                   Twitch
                 </a>
