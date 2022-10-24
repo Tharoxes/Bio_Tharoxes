@@ -3,7 +3,7 @@ import Footer from "../components/layout/Footer";
 import Navbar from "../components/layout/Navbar";
 import EmailBar from "../components/layout/EmailBar";
 import SocialMediaBar from "../components/layout/SocialMediaBar";
-import pic from "../pictures/Bewerbungsfoto.jpg";
+import pic from "../assets/Bewerbungsfoto.jpg";
 
 function Home() {
   return (
