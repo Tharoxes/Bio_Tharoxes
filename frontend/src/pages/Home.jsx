@@ -14,7 +14,7 @@ function Home() {
       <main className="container-xl">
         <section className="container">
           <div className="row justify-content-center">
-            <div className="d-flex justify-content-center align-items-center col-lg-6 col-8">
+            <div className="d-flex justify-content-center align-items-center col-lg-4 col-8">
               <div>
                 <p className="highlight">Welcome, my name is</p>
                 <h1 className="highlight">Thanh Cong Huynh</h1>
@@ -29,7 +29,7 @@ function Home() {
           </div>
         </section>
         <section className="row justify-content-center" id="About_Me">
-          <div className="d-flex justify-content-center align-items-center col-lg-6 col-8">
+          <div className="d-flex justify-content-center align-items-center col-lg-5 col-8">
             <div>
               <h3 className="highlight">About Me</h3>
               <div>
@@ -45,7 +45,7 @@ function Home() {
           </div>
         </section>
         <section className="row justify-content-center" id="Experience">
-          <div className="d-flex justify-content-center align-items-center col-lg-6 col-8">
+          <div className="d-flex justify-content-center align-items-center col-lg-4 col-8">
             <div>
               <h3 className="highlight">Experience</h3>
               <div>
@@ -62,7 +62,7 @@ function Home() {
           </div>
         </section>
         <section className="row justify-content-center" id="Work">
-          <div className="d-flex align-items-center col-lg-8 col-sm-6 col-5">
+          <div className="d-flex align-items-center col-lg-4 col-sm-6 col-5">
             <div>
               <h3 className="highlight">Work</h3>
               <div>
@@ -78,7 +78,7 @@ function Home() {
         </section>
         <section className="container mx-5" id="Contact">
           <div className="row justify-content-start">
-            <div className="d-flex align-items-center col-lg-8 col-sm-7 col-6">
+            <div className="d-flex align-items-center col-lg-4 col-sm-7 col-6">
               <div>
                 <h3 className="highlight">Contact</h3>
                 <div>
