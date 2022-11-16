@@ -4,6 +4,7 @@ import Navbar from "../components/layout/Navbar";
 import EmailBar from "../components/layout/EmailBar";
 import SocialMediaBar from "../components/layout/SocialMediaBar";
 import pic from "../assets/Bewerbungsfoto.jpg";
+import RepoList from "../components/repos/RepoList";
 
 function Home() {
   return (
@@ -57,10 +58,12 @@ function Home() {
                   developing Web applications using MERN Stack with React 18 and
                   MongoDB 5. Take a look on my Github repository.
                 </div>
+                <RepoList />
               </div>
             </div>
           </div>
-        </section>
+        </section>                
+
         <section className="row justify-content-center" id="Work">
           <div className="d-flex align-items-center col-lg-4 col-sm-6 col-5">
             <div>
