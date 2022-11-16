@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
-
+import PikachuLoading from '../layout/PikachuLoading'
 
 function RepoList() {
   const [repos, setRepos] = useState([])
@@ -20,7 +20,9 @@ function RepoList() {
   const data = await response.json()
 
   setRepos(data)
-  setLoading(false)
+  setTimeout(function() 
+    {setLoading(false)}, 3000)
+
   }
   if(!loading){
       return (
@@ -29,7 +31,7 @@ function RepoList() {
     ))}</div>
   )
   } else {
-    <spam>..loading</spam>
+    return <PikachuLoading />
   }
 
 }
