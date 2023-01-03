@@ -1,4 +1,13 @@
 import { FaCode } from 'react-icons/fa'
+import {
+  FaGithubSquare,
+  FaInstagram,
+  FaTiktok,
+  FaYoutubeSquare,
+  FaTwitch,
+  FaTwitter,
+  FaRedditSquare,
+} from "react-icons/fa";
 
 function Navbar() {
   return (
@@ -24,71 +33,33 @@ function Navbar() {
             <ul className="nav navbar-nav">
               <li className="dropdown mx-2">
                 <a
-                  href="#"
+                  href="/"
                   // className="dropdown-toggle" removed
                   // data-bs-toggle="dropdown"
                 >
                   Home Dev
                 </a>
-                <ul className="dropdown-menu">
-                  <li>
-                    <a className="dropdown-item" href="#About_Me">About_Me</a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#Experience">Experience</a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#Work">Work</a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#Contact">Contact</a>
-                  </li>
-                </ul>
-              </li>
+              </li >
               <li className="dropdown mx-2">
                 <a
                   href="/twitch"
                 >
                   Twitch
                 </a>
-                <ul className="dropdown-menu">
-                  <li>
-                    <a className="dropdown-item" href="#">link 1</a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">link 2</a>
-                  </li>
-                </ul>
               </li>
               <li className="dropdown mx-2">
                 <a
-                  href="#"
+                  href="/youtube"
                 >
                   Youtube
                 </a>
-                <ul className="dropdown-menu">
-                  <li>
-                    <a className="dropdown-item" href="#">link 1</a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">link 2</a>
-                  </li>
-                </ul>
               </li>
               <li className="dropdown mx-2">
                 <a
-                  href="#"
+                  href="/socialmedia"
                 >
                   Social Media
                 </a>
-                <ul className="dropdown-menu">
-                  <li>
-                    <a className="dropdown-item" href="#">link 1</a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">link 2</a>
-                  </li>
-                </ul>
               </li>
             </ul>
           </div>

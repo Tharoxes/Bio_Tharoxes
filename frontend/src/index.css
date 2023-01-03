@@ -26,6 +26,10 @@ main > section {
   height: 800px;
 }
 
+main > h1 {
+  margin-top: 300px;
+}
+
 section > .row{
   height: 800px;
 }
@@ -200,7 +204,6 @@ classname section  */
   }
 
   .navbar .nav-item .dropdown-menu{ display: none; }
-  .navbar .nav-item:hover .nav-link{   }
 	.navbar .nav-item:hover .dropdown-menu{ display: block; }
 	.navbar .nav-item .dropdown-menu{ margin-top:0; }
 }
