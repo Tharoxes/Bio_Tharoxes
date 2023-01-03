@@ -30,6 +30,10 @@ section > .row{
   height: 800px;
 }
 
+a:active, a:visited {
+  color: blueviolet;
+}
+
 /* 
 classname section  */
 
@@ -105,11 +109,6 @@ classname section  */
 .nav a:hover {
   text-decoration: none;
   color: rgb(226, 208, 43);
-}
-
-.nav a:active {
-  text-decoration: none;
-  color: rgb(43, 55, 226);
 }
 
 .dropdown:hover .dropdown-menu {

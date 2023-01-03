@@ -27,7 +27,9 @@ function RepoList() {
   if(!loading){
       return (
     <div>{repos.map((repo) => (
-      <h3 key={repo.id}>{repo.name}</h3>
+      <div>
+       <a className='highlight' target='_blank' rel='noreferrer' href={repo.html_url} key={repo.id}>{repo.name}</a>
+      </div>
     ))}</div>
   )
   } else {

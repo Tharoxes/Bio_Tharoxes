@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../components/layout/Footer";
 import Navbar from "../components/layout/Navbar";
 import EmailBar from "../components/layout/EmailBar";
 import SocialMediaBar from "../components/layout/SocialMediaBar";
@@ -86,7 +85,7 @@ function Home() {
                 <h3 className="highlight">Contact</h3>
                 <div>
                   <div className="home-text">
-                    If you have any questions, write me an email or get in touch
+                    If you have any questions, write me an <a className='highlight' href="mailto: thc.huynh@protonmail.com">email</a> or get in touch
                     by any of my social media links on the left.
                   </div>
                 </div>
