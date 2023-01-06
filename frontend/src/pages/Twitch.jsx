@@ -4,7 +4,7 @@ function Twitch() {
     <div>
       <Navbar />
       <main className="container">
-        <h1>Twitch - VoD, Spiele, Streamingplan</h1>
+        <h1 className='highlight'>Twitch - VoD, Spiele, Streamingplan</h1>
         <section>
           <h2>Video-on-Demand</h2>
         </section>

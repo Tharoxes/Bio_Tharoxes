@@ -18,7 +18,6 @@ function RepoList() {
   })
 
   const data = await response.json()
-
   setRepos(data)
   setTimeout(function() 
     {setLoading(false)}, 3000)
@@ -26,11 +25,11 @@ function RepoList() {
   }
   if(!loading){
       return (
-    <div>{repos.map((repo) => (
-      <div>
-       <a className='highlight' target='_blank' rel='noreferrer' href={repo.html_url} key={repo.id}>{repo.name}</a>
-      </div>
-    ))}</div>
+    <ul>{repos.map((repo) => (
+      <li key={repo.id}>
+       <a className='highlight' target='_blank' rel='noreferrer' href={repo.html_url}>{repo.name}</a>
+      </li>
+    ))}</ul>
   )
   } else {
     return <PikachuLoading />

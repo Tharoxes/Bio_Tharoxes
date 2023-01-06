@@ -7,7 +7,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   background-color: rgb(16, 4, 48) ;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .container-xl {
@@ -22,16 +28,12 @@ div > span {
   color: aliceblue;
 }
 
-main > section {
-  height: 800px;
-}
-
 main > h1 {
   margin-top: 300px;
 }
 
-section > .row{
-  height: 800px;
+#Introduction, #About_Me, #Experience, #Work, #Contact {
+  height: 600px;
 }
 
 a:active, a:visited {
@@ -145,6 +147,22 @@ classname section  */
   margin-left: 10px;
 }
 
+/* video setting */
+
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+   border-radius: 20px;
+}
+
+#playlist {
+  margin-left: 20px;
+  padding: 10px;
+}
 
 /*  responsive section  */
 @media all and  (max-width: 2500px) {
@@ -164,10 +182,15 @@ classname section  */
     font-size: 1.7rem;
     left: 5%;
   }
-  
+  .iframe-container {
+    overflow: hidden;
+    /* 16:9 aspect ratio */
+    padding-top: 37.25%;
+    position: relative;
+  }
 }
 
-@media all and  (max-width: 900px) {
+@media all and  (max-width: 991px) {
   span, h2, p {
     font-size: 1rem;
   }
@@ -180,9 +203,16 @@ classname section  */
     font-size: 1.2rem;
     left: 5%;
   }
+
+  .iframe-container {
+    overflow: hidden;
+    /* 16:9 aspect ratio */
+    padding-top: 56.25%;
+    position: relative;
+  }
 }
 
-@media all and (max-width: 560px) {
+@media all and (max-width: 576px) {
   span, h1, p {
     font-size: 0.8rem;
   }
@@ -206,4 +236,6 @@ classname section  */
   .navbar .nav-item .dropdown-menu{ display: none; }
 	.navbar .nav-item:hover .dropdown-menu{ display: block; }
 	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+
+
 }

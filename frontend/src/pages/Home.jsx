@@ -12,8 +12,7 @@ function Home() {
       <SocialMediaBar />
       <EmailBar />
       <main className="container-xl">
-        <section className="container">
-          <div className="row justify-content-center">
+        <section className="container row justify-content-center" id="Introduction">
             <div className="d-flex justify-content-center align-items-center col-lg-4 col-8">
               <div>
                 <p className="highlight">Welcome, my name is</p>
@@ -26,7 +25,6 @@ function Home() {
                 </div>
               </div>
             </div>
-          </div>
         </section>
         <section className="row justify-content-center" id="About_Me">
           <div className="d-flex justify-content-center align-items-center col-lg-5 col-8">
@@ -78,7 +76,7 @@ function Home() {
             </div>
           </div>
         </section>
-        <section className="container mx-5" id="Contact">
+        <section className="container mx-5 row justify-content-center" id="Contact">
           <div className="row justify-content-start">
             <div className="d-flex align-items-center col-lg-4 col-sm-7 col-6">
               <div>
