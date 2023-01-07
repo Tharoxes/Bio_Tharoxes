@@ -1,5 +1,10 @@
+import { useState } from "react"
 import Navbar from "../components/layout/Navbar"
+
 function Twitch() {
+  const [playlists, setPlaylists] = useState([])
+
+
   return (
     <div>
       <Navbar />
