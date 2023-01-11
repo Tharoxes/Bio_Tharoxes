@@ -36,8 +36,13 @@ main > h1 {
   height: 600px;
 }
 
-a:active, a:visited {
+a:active{
   color: blueviolet;
+}
+
+a:link, a:visited{
+  color:rgb(226, 208, 43);
+  text-decoration: none;
 }
 
 /* 
@@ -45,6 +50,15 @@ classname section  */
 
 .highlight {
   color: rgba(255,201,71,1.0);
+}
+
+.titleGame {
+  margin-top: 32px;
+} 
+
+.description {
+  color: blueviolet;
+  font-size: medium;
 }
 
 .home-text {
