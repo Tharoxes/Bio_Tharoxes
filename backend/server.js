@@ -4,7 +4,7 @@ const {google}  = require('googleapis');
 const youtube = google.youtube('v3');
 
 const dotenv = require("dotenv").config();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 const path = require("path");
 const { errorHandler } = require('./middleware/errorMiddleware')
 const connectDB = require("./config/db")
@@ -23,6 +23,8 @@ app.use(express.urlencoded({extended: false}))
 
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
+
+app.set('port', process.env.PORT || 8080);
 
 // google/youtube request
 /* youtube.playlists.list({
@@ -46,4 +48,4 @@ app.use("/api/users", require("./routes/userRoutes"));
 //Middleware to handle error
 app.use(errorHandler);
 
-app.listen(PORT, () => console.log(`Server started on Server: ${PORT}`));
+app.listen(app.get('port'), () => console.log(`Server started on Server: ${PORT}`));
