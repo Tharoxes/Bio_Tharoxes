@@ -38,12 +38,24 @@ app.set('port', process.env.PORT || 8080);
 })
  */
 app.get("/", (req, res) => {
-  res.status(201).json({ message: "Hi" });
+  res.send('App is running!');
 });
 
 //Routes
 app.use("/api/users", require("./routes/userRoutes"));
 // app.use('/youtube', require('./routes/youtubeRoutes'));
+
+// serve frontend
+if(process.env.NODE_ENV == 'production'){
+  // set build folder as static
+  app.use(express.static(path.join(__dirname, '../frontend/build')))
+
+  app.get('*', (req, res) => res.sendFile(__dirname, '../', 'frontend', 'build', 'index.html'))
+}else{
+  app.get("/", (req, res) => {
+    res.status(200).json({message:'App failed to run!'});
+  });
+}
 
 //Middleware to handle error
 app.use(errorHandler);
