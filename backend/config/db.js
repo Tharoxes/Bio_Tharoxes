@@ -5,7 +5,7 @@ const mongo_password = process.env.MONGO_PASSWORD
 
 const CONNECTION_URL = `mongodb+srv://${mongo_user}:${mongo_password}@cluster0.ofi1wkl.mongodb.net/?retryWrites=true&w=majority`
 
-const local_TestDB = "mongodb://127.0.0.1:27017/test"
+// const local_TestDB = "mongodb://127.0.0.1:27017/test"
 
 const connectDB = async () => {
   try {

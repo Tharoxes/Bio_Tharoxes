@@ -37,9 +37,6 @@ app.set('port', process.env.PORT || 8080);
   console.log(err)
 })
  */
-app.get("/", (req, res) => {
-  res.send('App is running!');
-});
 
 //Routes
 app.use("/api/users", require("./routes/userRoutes"));
