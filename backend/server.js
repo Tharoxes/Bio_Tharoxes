@@ -43,7 +43,7 @@ app.use("/api/users", require("./routes/userRoutes"));
 // app.use('/youtube', require('./routes/youtubeRoutes'));
 
 // serve frontend
-/* if(process.env.NODE_ENV === 'production'){
+if(process.env.NODE_ENV === 'production'){
   // set build folder as static
   app.use(express.static(path.join(__dirname, '../frontend/build')))
 
@@ -52,9 +52,9 @@ app.use("/api/users", require("./routes/userRoutes"));
   app.get("/", (req, res) => {
     res.status(200).json({message:'App failed to run!'});
   });
-} */
+}
 
-if (process.env.NODE_ENV === 'production') {
+/* if (process.env.NODE_ENV === 'production') {
   // Set build folder as static
   app.use(express.static(path.join(__dirname, '../frontend/build')))
 
@@ -66,7 +66,7 @@ if (process.env.NODE_ENV === 'production') {
   app.get('/', (_, res) => {
     res.status(200).json({ message: 'Welcome to the Support Desk API' })
   })
-}
+} */
 
 
 //Middleware to handle error
