@@ -12,10 +12,10 @@ function App() {
       <div className="App">
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/*' element={<NotFound />} />
           <Route path='/twitch' element={<Twitch />} />
           <Route path='/youtube' element={<Youtube />} />
           <Route path='/socialmedia' element={<SocialMedia />} />
+          <Route path='/*' element={<NotFound />} />
         </Routes>
       </div>
     </Router>
