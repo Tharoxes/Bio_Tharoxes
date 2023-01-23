@@ -1,6 +1,7 @@
 import Navbar from "../components/layout/Navbar";
 
-const parentEndpoint = 'localhost';
+// const localParentEndpoint = 'localhost';
+const parentEndpoint = 'tharoxes-dev.onrender.com';
 
 function Twitch() {
 
