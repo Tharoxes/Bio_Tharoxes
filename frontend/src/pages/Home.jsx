@@ -9,7 +9,7 @@ function Home() {
   return (
     <div>
       <Navbar />
-      <SocialMediaBar />
+      {/*<SocialMediaBar />*/}
       <EmailBar />
       <main className="container-xl">
         <section className="container row justify-content-center" id="Introduction">
