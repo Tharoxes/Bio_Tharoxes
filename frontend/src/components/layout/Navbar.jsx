@@ -30,6 +30,7 @@ function Navbar() {
             className="collapse navbar-collapse justify-content-end"
             id="navbarNav"
           >
+            {/* 
             <ul className="nav navbar-nav">
               <li className="dropdown mx-2">
                 <a
@@ -62,6 +63,7 @@ function Navbar() {
                 </a>
               </li>
             </ul>
+            */}
           </div>
         </div>
       </nav>
